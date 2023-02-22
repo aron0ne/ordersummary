@@ -1,0 +1,146 @@
+:root{
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+
+    --red-hat-display: 'Red Hat Display';
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: var(--red-hat-display); 
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--paleblue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    
+}
+
+#box-principal{
+    background-color: var(--verypaleblue);
+    width: 420px;
+    height: 600px;
+    border-radius: 20px;
+    /* box-shadow: 0,9px rgb(134, 132, 132); */
+}
+
+
+
+.imagen{
+    width: 100%;
+    height: 200px;
+    
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#order{
+    text-align: center;
+}
+
+h1{
+    font-size: 25px;
+    color: var(--darkblue);
+}
+
+#order{
+    margin-top: 35px;
+    
+}
+
+p{
+    margin-top: 10px;
+    color: var(--desaturatedblue);
+    padding-left: 45px;
+    padding-right: 40px;
+}
+
+#box-annual{
+    background-color: rgba(228, 228, 228, 0.253);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    
+}
+
+#music{
+    margin: 0 12%;
+}
+
+#annual-plan{
+    font-size: 12px;    
+}
+
+
+span{
+    color: rgb(139, 136, 136);
+}
+
+a{
+    font-size: 13px;
+    padding-left: 45px;
+}
+
+#pay{
+    background-color: var(--brightblue);
+
+    margin-top: 10px;
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+#cancel{
+    background-color: rgba(228, 228, 228, 0.253);
+
+    /* margin-left: 40px; */
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(139, 136, 136);
+    border: none;
+
+}
+
+
+
+
+
+@media (max-width:540px) {
+
+    #box-principal{
+        width: 300px;
+    }
+
+    #annual-plan h2 {
+        font-size: 14px;
+    }
+
+    #change {
+        margin-left: -20px;
+    }
+    
+}
